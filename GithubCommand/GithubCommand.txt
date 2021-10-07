@@ -1,0 +1,16 @@
+## 깃 명령어 정리 
+
+# git log
+ - commit했던 버전들의 Author와 Date를 보여준다. 
+
+# git log --all 
+ - commit했던 버전 모두 보여준다.
+
+# git checkout [버전] 
+ - 해당 버전으로 checkout 받아진다.
+
+# git checkout master
+ - 가장 최근의 마스터 버전으로 다시 checkout 받아져서 되돌아간다.
+
+# git remote -v 
+ - 현재 remote 레포지토리가 연결이 어느쪽으로 되어있는지 보여준다. 

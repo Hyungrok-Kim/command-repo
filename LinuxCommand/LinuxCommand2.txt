@@ -1,0 +1,97 @@
+192.168.56.105 - 22 
+
+educafe
+ubuntu
+
+notepad에 shell scrpting할 때는 
+첫줄에 -> #! /bin/bash
+
+파일 탐색기에서 
+\\192.168.56.105 주소 검색
+Linux는 기본적으로 띄어쓰기를 기준으로 token화 하기 때문에 띄어쓰기에 주의해야함 
+변수 세팅 -> ex) var=world (o) , var = world (x)
+
+Linux 명령어 
+
+# ps , ps -f (자세하게 보여주기) 
+- UID, PID, PPID 등등 정보 보여주기 
+
+# bash -> ps -f 
+- bash 라는 명령어는 bash라는 프로그램을 실행시키겠다는 의미 
+
+# 특정 파일의 내용을 보는 명령어
+# cat 
+# ex) cat /etc/passwd 
+
+# 특정 파일의 내용을 보는 명령어 2 (한 페이지 단위로 보여짐) 
+# less 
+# ex) less /etc/passwd
+
+# 쉘을 바꾸는 명령어 
+# chsh  -> password 입력
+# 또는
+# chsh -s /bin/bash educafe
+
+# 어떤 쉘을 사용하고 있는지 확인
+# getent passwd educafe
+
+# 현재 경로에서 어떤 파일, 폴더 있는지 확인
+# ls
+
+# ldd 
+# 명령어를 실행하기 위해서 어떤 라이브러리가 필요한지 확인
+# ldd /usr/bin/ls
+
+# 파일 내에서 문자열 찾기
+# grep
+# egrep (expanded grep)
+
+
+
+# ls -a (숨김 파일까지) 
+
+# 폴더(디렉토리) 또는 파일 지우기 
+# rm -r * (모두 지우기) 
+
+# scripting
+# echo ${var:-hello} -> var라는 변수에 아무것도 없다면 hello를 써라 
+# echo ${var:+hello} -> var라는 변수에 할당되어있는 것이 있다면 hello를 써라
+# echo ${var:=hello} -> var라는 변수에 값이 없다면 대입을 해달라
+# echo ${var:?hello world} -> var에 값이 없으면 hello world를 찍어라 
+
+# 할당된 변수 값 없애기 
+# unset
+# ex) unset var 
+
+# ?의 의미 
+# any single char 
+
+# 앞의 한글자 자르기 
+# echo ${var#?}
+
+# 뒤의 한글자 자르기 
+# echo ${var%?}
+
+# var='/home/educafe/lab'
+# echo ${var%/*}  -> /home/educafe   -> 가장 짧은 / 뒤에 짜름
+# echo ${var%%/*} -> 아무것도 안나옴 /뒤에 다 잘라버림
+
+# $(var) 와 `var`는 같은 의미 
+
+# alias
+# 현재 쉘 상에 설정된 alias 모두를 보여줌 
+
+# echo $?
+# 현재 실행시킨 프로그램 결과 값 
+
+# 디버그 
+# .sh 파일 위에 
+## set -x
+## trap read debug 
+# 넣으면 한 라인씩 실행 
+
+
+
+
+
+

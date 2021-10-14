@@ -17,3 +17,6 @@
 
 # git pull origin master
  - master branch의 Project를 나의 프로젝트로 merge 
+
+# git branch 
+ - git의 모든 브랜치 확인 

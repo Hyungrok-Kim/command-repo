@@ -12,6 +12,9 @@
 # git checkout master
  - 가장 최근의 마스터 버전으로 다시 checkout 받아져서 되돌아간다.
 
+# git checkout -b [브랜치명]
+ - 브랜치 생성 후 바로 해당 브랜치로 이동
+
 # git remote -v 
  - 현재 remote 레포지토리가 연결이 어느쪽으로 되어있는지 보여준다. 
 

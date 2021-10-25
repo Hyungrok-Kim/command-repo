@@ -55,7 +55,10 @@ which python3 : python3가 어디있는지 알려줌
 
 tail : 문서의 끝자락을 보여주는 명령어 
 
- 
+
+## /etc/profile 와 ~/.bash_profile의 차이 
+/etc/profile은 시스템 전역(모든 사용자들)에 대한 환경설정
+~/.bash_profile은 sudo 아이디(centos에서 로그인하는 명령어)를 이용해 로그인할 때 적용되는 개인 설정 파일  
 
 
 

@@ -98,3 +98,13 @@ git diff [커밋 버전 hash] [커밋 버전2 hash] [파일명]
 git diff [커밋 버전 hash] [브랜치명] src/
 ```
 
+# Linux Command
+> CLI 비우기 
+```linux
+clear
+```
+
+> 폴더 및 파일 List  ls(List의 약자)  
+```linux
+ls
+```

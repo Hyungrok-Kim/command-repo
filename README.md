@@ -104,7 +104,23 @@ git diff [커밋 버전 hash] [브랜치명] src/
 clear
 ```
 
-> 폴더 및 파일 List  ls(List의 약자)  
+> 폴더 및 파일 List  (List의 약자)  
 ```linux
 ls
+```
+
+> File 만들기 
+```linux
+touch
+```
+
+> Folder 만들기
+``` linux
+mkdir
+```
+
+> File 복사 (copy의 약자)
+```
+cp A B 
+-> A라는 파일을 B라는 파일로 
 ```
